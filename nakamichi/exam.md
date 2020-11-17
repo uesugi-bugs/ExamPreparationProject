@@ -235,3 +235,66 @@ int x=10;
 int y=3;
 System.out.printf("%d",--記述--);
 ```
+- 解答欄
+
+___
+
+**問8(10)下記のソースコードでif文の中で配列numsを昇順に並べ替えるようにソースコードを記載せよ**
+```java
+import java.util.*;
+int[] nums=new int{4,2,8,13,62,1,3,4,9,10};
+for(int i=0;i<nums.length-1;i++){
+	for(int j=i+1;j<nums.length;j++){
+		if(--記述--){
+			--記述--
+			--記述--
+			--記述--
+		}
+	}
+}
+System.out.println(Arrays.toString(nums));
+```
+- 解答欄
+
+
+
+___
+
+**問9(5)下記のソースコードで各段1つづつ★が増え右詰めで表示されるようにif文内の---記述---箇所の条件式を記載せよ。++
+```java
+System.out.print("何段>");
+int n=new java.util.Scanner(System.in).nextInt();
+for(int i=0;i<n;i++){
+	for(int j=0;j<n;j++){
+		if(---記述---){
+			System.out.print('★');
+		}else{
+			System.out.print(' ');
+		}
+	}
+	System.out.println();
+}
+```
+- 解答欄
+
+___
+**問10(2)javaの二次元配列で列の数が行ごとに違う配列をなんと呼ぶか**
+- 解答欄
+
+___
+**問11(2)javaの配列は何型変数と呼ぶか**
+- 解答欄
+
+___
+**問12(2)javaの配列変数に入っている値は何の値か**
+- 解答欄
+
+___
+**問13(2)javaでnullポインタは何を指しているか**
+- 解答欄
+
+___
+**問14(2)定数と変数の違いを説明せよ**
+- 解答欄
+
+___
