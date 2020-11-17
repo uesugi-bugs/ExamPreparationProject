@@ -41,9 +41,9 @@
 
 1. .gitファイルをフォルダ内に作成するコマンドはどれか
    - git vivid
-   - git finish
-   - git commit
    - fit init
+   - git commit
+   - git init
 
 2. gitの管理下にあるファイルの内容が変更された。確認をするために使用するコマンドは何か
 
@@ -123,15 +123,28 @@
 
 ## 5. Java問題 全50点(各4点最後30点)
 
-1. “java test”と表示するプログラムを作成してください
+1. “java test”と表示するコードを作成してください(public class~等は不要)
 
-1. int型の変数 xに10、yに15を代入し、xとyを足した合計が出るプログラムを作成してください
+1. System.out.printlnとSystem.out.printの違いは何か
 
-1. int型の変数に任意の数値を代入し商と余りを表示するプログラムを作成してください
+1. 次の内正しいものはどれか
 
-1. Randomを使用して大吉、吉、凶の出るおみくじプログラムを作成してください
+   - int x=エックス
+   - int x=11
+   - int x=X
+   - int x=1.1
 
-1. ランダムな数値を配列に5つ格納し、最後に表示するプログラムを作成してください
+1. 数字等をランダムに出力したい場合に使うものはどれか
+
+   - new Gundam().nextInt
+   - new Random().nextInt
+   - new Scanner().nextInt
+
+1. %dや%sを使用して表示する場合の正しい選択を選んでください
+
+   - System.out.println();
+   - System.out.print();
+   - System.out.printf();
 
 1. 最後にシャッフルしたトランプの山札(ハートとダイヤのみ)からJokerを引くまで引いていき、Jokerを引いた人が負けるプログラムを作成してください(king,queen,jackは13,12,11と表記します)
 
