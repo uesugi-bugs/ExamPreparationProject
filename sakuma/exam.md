@@ -72,5 +72,45 @@
 # Java
 - 配点:50
 - 出題範囲:教科書（配列まで）+joytas.netの記事
+1. 下記のコードがコンパイルエラーになる原因は何か
+```java:Hoge.java
+public class Hoge{
+  public static void main(String[]args){
+    System.out.println("Hello World);
+  }
+}
+```
+2. 1文字を格納する時に宣言する変数の型名は何か
+3. 以下のコードを実行した際に表示される値は何か
+```java:Hoge.java
+public class Hoge{
+  public static void main(String[]args){
+    int x=5;
+    int y=2;
+    System.out.println(x/y);
+  }
+}
+```
+4. 私は30歳ですと出力させたい場合、以下のコードのprintln後の()内をどのように記述すべきか
+```java:Hoge.java
+public class Hoge{
+  public static void main(String[]args){
+    int age=30;
+    System.out.println("私はage歳です");
+  }
+}
+```
+5. int rand =new java.util.Random().nextInt(99);と記載されている場合、乱数の値はいくつからいくつまでか
+6. 変数aと変数bを比較して大きい方の値を変数cに代入したい場合、下記コードのc=と(a,b)の間に何と記述すべきか
+```java:Hoge.java
+public class Hoge{
+  public static void main(String[]args){
+    int a=13;
+    int b=34;
+    int c=      (a,b);
+  }
+}
+```
+7. int型の配列numsを要素数5で作成する際のコードを記述せよ
 ### 予想問題
 ***
