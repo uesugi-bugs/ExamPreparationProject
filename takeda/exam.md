@@ -76,4 +76,11 @@
 		System.out.println(++a + 50);
 		System.out.println(b++ + 50);
 ```
-10. 
+10. 以下のソースを実行した時、画面にはどのように表示されるか
+```
+		int x=59;
+		int y=63;
+		String ans= "x+yは" + x + y;
+		System.out.println(ans);
+```
+11. 
