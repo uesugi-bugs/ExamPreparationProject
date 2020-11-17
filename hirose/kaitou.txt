@@ -1,0 +1,56 @@
+Unix
+1.pwd
+2.mkdir
+3.ii
+4.i
+5.iii
+
+vim
+1.ii
+2.iv
+3.i
+4.i
+5.iv
+
+git
+1.i
+2.ii
+3.iii
+
+html&css
+1.ii
+2.ii
+3.iii
+4.iii
+5.ii
+6.iv
+7.ii
+8.iii
+9.iii
+10.i
+
+java
+1.
+public class Hello{
+ public static void main(String[] args){
+  System.out.println("Hello World");
+ }
+}
+2.ii
+3.iii
+4.5行目を("x+y="(x+y))になおす
+5.ii
+6.5行目を(scoreA==scoreB)になおす
+7.iii
+8.4,0
+9.i
+10.29
+11.
+    A
+   AA
+  AAA
+ AAAA
+AAAAA
+12.[98,56,47,39,3]
+13.11
+14.12行目を("%3d",nums)になおす
