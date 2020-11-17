@@ -106,7 +106,7 @@
 
 ###css 
 - CSSにおけるコメントの記述方法は次のどれか？  
-1.&lt;!-- comment --&gt;  
+1. &lt;!-- comment --&gt;  
 1. /* comment */  
 1. // comment  
 1. // comment //  
@@ -153,7 +153,6 @@
 1. div.box  
 1. target, box  
 
-
 - ボックスモデルに関する次の記述で正しいものはどれか？  
 1. marginの外側にborderがある。  
 1. marginとpaddingは同じ意味である。  
@@ -161,7 +160,7 @@
 1. borderの外側にpaddingがある。  
 
 領域の角を丸めるプロパティは次のどれか？  
-1. - border-round  
+1. border-round  
 1. border-circle  
 1. border-rounded  
 1. border-radius  
