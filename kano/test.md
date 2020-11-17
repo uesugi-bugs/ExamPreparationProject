@@ -47,7 +47,7 @@ k
 
 (6)保存せずに終了する場合のコマンド
 
-(7)コマンドiとコマンドA（Shift＋a)の違いを説明せよ
+(7)コマンドaとコマンドA（Shift＋a)の違いを説明せよ
 
 (8)コマンドd$の機能を説明
 
@@ -91,7 +91,7 @@ CSSファイルを読み込むタグとして正しいのはどれか？
 (4)dl, dd  
 
 空白の実体参照はどれか？  
-(1)&nbsp;  
+(1)&amp;nbsp;  
 (2)&nsbp;  
 (3)&nbsp  
 (4)&nsbp  
@@ -125,7 +125,54 @@ CSSにおける長さの単位で正しくないのは次のどれか？
 (4)borderの外側にpaddingがある。  
 
 **Java(50)**
-javaは何スコープか
-int[][]nums = 
+```java
+ 1 import java.util.*;
+ 2 public class Q1{
+ 3  public static void main(String[] args){
+ 4    String[] items = {"いつ","誰が","どこで","何をした",};
+ 5    String[][] data = [*****][];
+ 6    for(int i = 0; i < data.length; i++){
+ 7      System.out.printf("%sはいくつ?>",items[i]);
+ 8      int count = new Scanner(System.in).nextInt();
+ 9      for(int j = 0; j < data[i].length; j++){
+10        System.out.printf("%sをいれて>",items[i]);
+11        data[i][j] = new Scanner(System.in).nextInt();
+12      }
+13    }
+14    String[] seps = {"、","が、","で、","。",};
+15    for(int i = 0; i < data.length; i++){
+16    int index = new Random().nextInt(data[i].length);
+17    System.out.print(data[i][index] + seps[i]);
+18    }
+19    System.out.println();
+20 }
+21}
 
+```
+4行目 "何をした",}の「,」がない場合にどうなるか  
+1.コンパイルエラーになる　2.コンパイルは通るが処理が実行されない　3.プログラムの作動に影響はない
 
+5行目　*****の部分にあてはまるものを書け
+
+7行目　int i = 3のときの出力結果を書け
+
+11行目で起きるエラーについて誤っている箇所と正解を書け
+
+16行目　(data[i].length)を(data.length)に書き換えたらどうなるか  
+1.エラーになる　2.どちらも出力結果は変わらない　3.実行はされるが出力結果が異なる
+
+```java
+import java.util.*;
+＊＊中略＊＊
+int ran = new Random().nextInt(100)+1; 
+if(ran > 50){
+ System.out.println("当たりです");
+}else{
+ System.out.println("はずれです");
+}
+```
+ranで出力される乱数の範囲を答えよ  
+
+上記のif文を三項演算子で書き直せ  
+
+import java.util.*;を使用せずにランダムを出力するプログラムを書け  
