@@ -20,7 +20,7 @@
 
 10.bashTestフォルダを削除するコマンドを書け。
 
-**Vim問題計10点**
+Vim問題計10点
 
 11.行全体の変更を取り消すコマンドを書け。
 
@@ -40,9 +40,7 @@
 
 19.HELPキーとF1キーが使えない場合、ヘルプを開始するコマンドを書け。
 
-20.
-
-**Git問題計10点**
+Git問題計10点
 
 21.作成したフォルダをGitの管理下に置くためのコマンドをかけ。
 
@@ -57,10 +55,6 @@
 26.devでの変更を取り込むため、masterブランチにcheckoutした後に入力するコマンドを書け。
 
 27.いらなくなったdevブランチを削除するコマンドを書け。
-
-28.
-
-29.
 
 30.
 
@@ -103,3 +97,77 @@
 49.
 
 50.
+
+**Java問題系50点**
+```
+51.以下の●の部分に、正しい処理を記述せよ（文字数は自由）。
+
+public class Main {
+  public static void main(String[] args) {
+    int x=10;
+    int count=3;
+    while(count > 0){
+      x += 5;
+      ●●●●●●●
+    }
+    System.out.println("Ans:"+ x);
+  }
+}
+```
+```
+52.以下の●の部分に、正しい処理を記述せよ（文字数は自由）。
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.print("Bashでフォルダごと削除する際につけるオプションは何?1:-u,2:-f,3:-r　>");
+    int num=new java.util.Scanner(System.in).nextInt();
+    switch(num){
+      case 3:
+        System.out.println("OK!");
+        break;
+        ●●●●●●●●●
+        System.out.println("NG");
+    }
+  }
+}
+```
+```
+53.以下の●の部分に、正しい処理を記述せよ（文字数は自由）。
+
+public class Main {
+  public static void main(String[] args) {
+    int count=0;
+    int num;
+    do{
+      num=new java.util.Random().nextInt(101);
+      ●●●●●●●●●
+    }●●●●●●●●●
+    System.out.println(count+"回目に100が出ました！");
+  }
+}
+```
+```
+54.以下の●の部分に、正しい処理を記述せよ（文字数は自由）。
+
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+    final int LUCKY_NO=777;
+		int count=0;
+    Random rand=new Random();
+		while(true){
+			●●●●●●●●●
+      ●●●●●●●●●
+      ●●●●●●●●●
+      ●●●●●●●●●
+			}
+		}
+		System.out.println(LUCKY_NO+"は" + count + "回目に出ました。");
+	}
+}
+```
+```
+55.以下の●の部分に、正しい処理を記述せよ（文字数は自由）。
+
+
+
