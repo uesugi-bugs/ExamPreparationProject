@@ -71,7 +71,8 @@
 ***
 # Java
 - 配点:50
-- 出題範囲:教科書（配列まで）+joytas.netの記事
+- 出題範囲:教科書（配列まで）+授業で扱ったもの
+### 予想問題
 1. 下記のコードがコンパイルエラーになる原因は何か
 ```java:Hoge.java
 public class Hoge{
@@ -91,12 +92,12 @@ public class Hoge{
   }
 }
 ```
-4. 私は30歳ですと出力させたい場合、以下のコードのprintln後の()内をどのように記述すべきか
+4. 変数ageを用いて、「私は25歳です」と出力させたい場合、以下のコードのprintln後の(  )内にどのように記述すべきか
 ```java:Hoge.java
 public class Hoge{
   public static void main(String[]args){
-    int age=30;
-    System.out.println("私はage歳です");
+    int age=25;
+    System.out.println(           );
   }
 }
 ```
@@ -111,6 +112,125 @@ public class Hoge{
   }
 }
 ```
-7. int型の配列numsを要素数5で作成する際のコードを記述せよ
-### 予想問題
+7. 変数nameの内容が「高橋」という内容だったら…という条件式を記述せよ
+8. 変数aが20以上かつ変数bが30未満だったら…という条件式を記述せよ
+9. 変数xが0より小さいまたは変数xが100より大きい…という条件式を記述せよ
+10. int型の配列numsを要素数5で作成する際のコードを記述せよ
+11. 入力した名前を「ようこそ！○○」と出力するには下記コードの空白の行にどのように記述すべきか
+```java:Hoge.java
+public class Hoge{
+  public static void main(String[]args){
+    System.out.print("名前を入力してください>");
+
+    System.out.println("ようこそ！"+name);
+  }
+}
+```
+12. 今日の気温を整数で入力させ、その値が25以上の時は「今日は暑いですね」10度以下の時は「今日は寒いですね」それ以外の時は「今日は過ごしやすいですね」と出力させたい場合、 ~~~~ 部分3か所にそれぞれ何と記述すればよいか
+```java:Hoge.java
+public class Hoge{
+	public static void main(String[]args){
+		System.out.print("今日の気温は?>");
+		int temp=new java.util.Scanner(System.in).nextInt();
+		 ~~~~ (temp>=25){
+			System.out.println("今日は暑いですね");
+		} ~~~~ (temp<=10){
+			System.out.println("今日は寒いですね");
+		} ~~~~ {
+			System.out.println("今日は過ごしやすいですね");
+		}
+	}
+}
+```
+13. 1と2が入力された場合は「散歩に行きましょう」、3が入力された場合は「家でのんびりしましょう」と出力させたい場合、 ~~~~ 部分2か所にそれぞれ何と記述すればよいか
+```java:Hoge.java
+import java.util.*;
+public class Hoge{
+  public static void main(String[]args){
+    System.out.print("今日の天気を番号で入力（晴れなら1、くもりなら2、雨なら3）");
+    int weather=new Scanner(System.in).nextInt();
+     ~~~~ (weather){
+      case 1:
+      case 2:
+        System.out.println("散歩に行きましょう。");
+         ~~~~;
+      case 3:
+        System.out.println("家でのんびりしましょう。");
+    }
+	}
+}
+```
+14. 配列wordsの要素を全て出力するにはforの後の(　)内になんと記述すればよいか
+```java:Hoge.java
+public class Hoge{
+  public static void main(String[]args){
+    String[] words={"public","static","void","main"};
+    for(      ){
+      System.out.println(n);
+    }
+  }
+}
+```
+15. 配列scoresの要素を全て出力するには ~~~~ 部分2か所にそれぞれ何と記述すればよいか
+```java:Hoge.java
+public class Hoge{
+  public static void main(String[]args){
+    int[] scores={100,96,92,88,74};
+    for(int i=0;i<scores.~~~~;i++){
+      System.out.println(scores[~~~~]);
+    }
+  }
+}
+```
+16.配列numsに格納されている値を後ろから順に格納し直して出力するには~~~~ 部分4か所にそれぞれ何と記述すればよいか
+```java:Hoge.java
+public class Hoge{
+  public static void main(String[]args){
+	int[] nums={22,9,1,2,1,1,7,0,1,0};
+	for(int i=0; ~~~~ ;i++){
+		 ~~~~
+		 ~~~~
+		 ~~~~
+	}
+	System.out.println(Arrays.toString(nums));
+    }
+  }
+}
+```
+17.このプログラムは何をしているのか
+```java:Hoge.java
+import java.util.*;
+public class Hoge{
+	public static void main(String[] args){
+		int[] nums={20,50,32,65,99,81,4,15};
+		for(int i=0;i<nums.length-1;i++){
+			for(int j=i+1;j<nums.length;j++){
+				if(nums[i]<nums[j]){
+					int temp=nums[i];
+					nums[i]=nums[j];
+					nums[j]=temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(nums));
+	}
+}
+```
+18.多次元配列に1から9の段までの掛け算（九九）を格納し、それぞれの段の配列を出力するプログラムにするには ~~~~~~ 部分2か所にそれぞれどのように記述すればよいか
+```java:Hoge.java
+import java.util.*;
+public class Hoge{
+	public static void main(String[] args){
+		int[][] kuku=new int[9][9];
+		for(int i=0;i<kuku.length;i++){
+			for(~~~~~~~~~~~~~~~~~~~~~~~~~~){
+				~~~~~~~~~~~~~~~~~~~
+			}
+		}
+		for(int i=0;i<kuku.length;i++){
+			System.out.println(Arrays.toString(kuku[i]));
+		}
+	}
+}
+```
 ***
