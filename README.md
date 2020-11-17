@@ -1,7 +1,7 @@
 # ExamPreparationProject
 第1回試験対策プロジェクト
 
-## みんなで試験対策をして、目指せ全員70点以上!
+## ![image](https://joytas.net/php/man.jpg)みんなで試験対策をして、目指せ全員70点以上!
 
 ---
 
