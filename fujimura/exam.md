@@ -106,7 +106,7 @@
 
 ### css 
 - CSSにおけるコメントの記述方法は次のどれか？  
-1.&lt;!-- comment --&gt;  
+1. &lt;!-- comment --&gt;  
 1. /* comment */  
 1. // comment  
 1. // comment //  
@@ -152,7 +152,6 @@
 1. div &gt; target  
 1. div.box  
 1. target, box  
-
 
 - ボックスモデルに関する次の記述で正しいものはどれか？  
 1. marginの外側にborderがある。  
