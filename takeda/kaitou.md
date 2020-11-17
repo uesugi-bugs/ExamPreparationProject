@@ -39,7 +39,7 @@
 
 ## Html&Css問題回答
 
-1. <!DOCTYPE html>
+1. `<!DOCTYPE html>`
 2. 2
 3. src
 4. headタグ
