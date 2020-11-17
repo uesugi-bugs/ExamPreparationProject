@@ -108,12 +108,80 @@
 問3:for文で10回"Hello World"を表示したい。使用する変数を「i」とした時のfor文を作成しなさい。  
 (作成範囲はforから閉じカッコまでで良い)(配点:6点)  
 
-問4:変数isWhichに。(配点:2点)  
-1. なんとなく。
-1. 本来javaの作成は自分だけではない、ほかの誰かが見ても波カッコ内の記述をわかりやすくするため。
-1. インデントがないとエラーが起きるため。
+問4:変数isWhichに真偽のデータ(true false)を格納したい。以下の選択肢の内、使用する変数の型として正しいものを選択せよ。(配点:2点)  
+1. 「int」
+1. 「boolean」
+1. 「String」
+
+問5:if文を用いて変数numに格納された数値が0以上、10以下か判定し、  
+trueなら「OK!」、falseなら「NO!」を表示するようにしたい。  
+閉じカッコとインデントに気を付けて、if文を記述しなさい。  
+(変数numの宣言と数値代入はすでに終わってるものとする。)(配点:10点)  
+
+問6:二次配列の練習として以下のプログラムを作成した。プログラムの内容から抜けている箇所を推測し、  
+正しい記述に修正しなさい。(配点:各2点)  
+
+```java
+import (1).util.*;  
+public class Lesson{  
+	public static void main(String[] args){  
+		int num = 0;  
+		System.out.print("数を入力(1～9まで)> ");  
+		num = new (2)(System.in).nextInt();  
+		int[][] kuku = new int[(3)][9];  
+		for(int i=0;i<kuku.length;i++){  
+			for(int j=0;j<kuku[i].length;j++){  
+				kuku[i][j]=(4);  
+				System.out.printf("%3d",kuku[i][j]);  
+				if(j (5) 8){  
+					System.out.print("|");  
+				}  
+			}  
+			System.out.println();  
+		}  
+	}  
+}  
+```
+(1)=  
+(2)=  
+(3)=  
+(4)=  
+(5)=  
 
 
+問7:以下のプログラムを作成したところ、エラーが発生した。エラーが起きた個所を選択し、正しいプログラムを記述しなさい。(配点:10点)  
 
 
+```
+  1 //ランダムに「まどか」を出力するプログラム。
+  2 //ただし、変数homuraの値が10を超えないといけない。
+  3 //また、変数madokaに1が代入されたとき、
+  4 //変数qbにランダムに値を入力し、一致したとき出力する。
+  5 public class Homura{
+  6   public static void main(String[] args){
+  7     //変数homuraとmadokaに0を代入する。
+  8     int homura = 0;
+  9     int madoka = 0;
+ 10     //処理が完了するまで無限ループ
+ 11     while(true){
+ 12       if(homura < 10){//homuraの最低ループ回数を確認
+ 13         homura += 1;
+ 14         System.out.println("私は何度でもやり直す");
+ 15       }else if(homura >10 || madoka ==1){//homuraの最低ループ回数とmadokaの値を確認
+ 16         System.out.println("まどか");
+ 17         break;//処理が終わったので抜ける
+ 18       }else{//homuraが10以上、かつmadokaが0の時の処理
+ 19         homura += 1;
+ 20         System.out.println("私は何度でもやり直す");
+ 21         int qb = new java.util.Random().nextInt(10);
+ 22         if(qb == 9){
+ 23           madoka +=1;
+ 24           System.out.println("私もう迷わない");
+ 25         }
+ 26       
+ 27     }
+ 28   }
+ 29 }
+
+```
 
