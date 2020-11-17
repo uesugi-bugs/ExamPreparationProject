@@ -40,6 +40,12 @@
 
 1. htmlで文書宣言をするためのタグは？
 2. cssファイルを読み込むためのタグで正しいものは？
+```
+		1.	<link rel="css" href="styles.css">
+		2.	<link rel="stylesheet" href="styles.css">
+		3.	<link rel="css" location="styles.css">
+		4.	<link rel="stylesheet" location="styles.css">
+```
 3. 画像を表示するタグで、ファイル名を指定するための属性は？
 4. metaタグの入る場所はどこの中？
 5. 番号付きリストolタグは何の略？
