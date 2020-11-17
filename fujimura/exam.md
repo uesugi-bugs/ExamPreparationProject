@@ -104,7 +104,7 @@
 1. length  
 1. len  
 
-###css 
+### css 
 - CSSにおけるコメントの記述方法は次のどれか？  
 1.&lt;!-- comment --&gt;  
 1. /* comment */  
@@ -161,7 +161,7 @@
 1. borderの外側にpaddingがある。  
 
 領域の角を丸めるプロパティは次のどれか？  
-1. - border-round  
+1. border-round  
 1. border-circle  
 1. border-rounded  
 1. border-radius  
