@@ -106,7 +106,7 @@
 
 ###css 
 - CSSにおけるコメントの記述方法は次のどれか？  
-1.&lt;!-- comment --&gt;  
+1. &lt;!-- comment --&gt;  
 1. /* comment */  
 1. // comment  
 1. // comment //  
