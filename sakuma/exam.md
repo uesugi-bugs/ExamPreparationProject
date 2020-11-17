@@ -65,19 +65,19 @@
 1. 「その要素にカーソルがのったとき」にスタイルを適用できる擬似クラスはどれか？  
 1. 要素の背景にimgフォルダの中のbg.pngを指定したい。同じディレクトリにhtmlファイル、imgフォルダ、cssフォルダがある時、cssフォルダ内のstyles.cssにはなんと記述するべきか？
 1. 3つのimg要素(a.png,b.png,c.png)が横に並んでいたときに、a.pngとb.pngの間、b.pngとc.pngの間に10pxの余白を作りたい。どの宣言を使えばよいか？
-1. 背景に画像を使う際はどのように記述すべきか？
+1. 背景に画像を使う際のプロパティは何か？
 1. redを表現する際はどのように記述すべきか？
 1. 「&copy;」を表示するにはどのように記述すべきか？
 ***
 # Java
 - 配点:50
-- 出題範囲:教科書（配列まで）+授業で扱ったもの
+- 出題範囲:教科書（配列まで）+授業で扱った内容
 ### 予想問題
 1. 下記のコードがコンパイルエラーになる原因は何か
 ```java:Hoge.java
 public class Hoge{
   public static void main(String[]args){
-    System.out.println("Hello World);
+    System.out.println(Hello World);
   }
 }
 ```
