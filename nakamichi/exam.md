@@ -6,7 +6,7 @@
 **問1(2)ホームディレクトリを表す記号はどれか**  
 1. $
 1. %
-1. &
+1. ~
 1. ./
 
 **問2(2)フォルダ毎コピーする為に必要なオプションはどれか**
@@ -33,7 +33,7 @@ ___
 1. 数値de
 1. 数値dO
 
-**問2(2)Undo(取り消しの取り消し)はどれか**
+**問2(2)Redo(取り消しの取り消し)はどれか**
 1. Shift + u
 1. Ctrl + y
 1. Ctrl + r
@@ -118,3 +118,120 @@ ___
 1. 直前の親要素
 1. 直前の要素
 1. position:static以外の親要素
+
+**問6(5)下記のソースでhead内にmetaタグで文字コードを指定しtitleをtestとして記述してください。**
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+- 解答欄
+
+
+____
+
+**問7(5)下記のcssソースでcontainer要素の中央揃え、背景色を青に指定するソースを記述せよ**
+
+```
+.container{
+  
+}
+```
+- 解答欄
+
+
+___
+
+
+## Java
+
+**問1(2)下記のソースコードを実行した際、出力内容にxの値が入るように〇の中を埋めよ**
+```java
+int x=10;
+System.out.println("xの値は"〇"です。");
+```
+
+- 解答欄
+
+
+___
+**問2(2)下記のソースコードを実行した際、一行ごとに改行されるように〇の中を埋めよ**
+```java
+System.out.printf("%d〇",2);
+System.our.printf("%d〇",6);
+```
+
+- 解答欄
+
+___
+**問3(2)下記のソースコードで配列の要素を出力させるために１行目にパッケージをインポートせよ**
+```java
+1行目------------------
+int[] arr=new int{1,2,3}
+System.out.println(Arrays.toString(arr));
+```
+- 解答欄
+
+___
+**問4(2)下記のソースコードを実行した際の出力結果を記載せよ**
+```java
+import java.util.*;
+int[] arr=new int[4]
+System.out.println(Arrays.toString(arr));
+```
+- 解答欄
+
+___
+**問5(2)下記のソースコードを実行した際の出力結果を記載せよ**
+```java
+import java.util.*;
+int[][] arr=new int[3][3]
+for(int i=0;i<2;i++){
+  for(int j=0;j<arr[i].length;j++){
+    arr[i][j]=j+100;
+   }
+}
+for(int i=0;i<arr.length;i++){
+ for(int J=0;j<arr[i].length;j++{
+    System.out.printf("%2d"arr[i][j]);
+  }
+  System.out.println();
+}
+```
+- 解答欄
+
+
+___
+**問6(10)下記の--挿入--部分に必ず一回実行されarrData[i]に1が代入される文を追記せよ**
+```java
+import java.util.*;
+int[] arr1=new int [10];
+int[] arrData=new int[arr1.length];
+for(int i=0;i<10;i++){
+  arr1[i]=new Random().nextInt(100);
+  -----挿入------
+  while(arr1[i]<=10){
+    arrData[i]=arrData[i]+new Random().nextInt(10);
+		break;
+  }
+}
+System.out.println(Arrays.toString(arrData));
+```
+- 解答欄
+
+
+
+___
+**問7(5)下記のソースコードで小さいほうの値が出力されるように--記述--に入る式を記載せよ（※条件演算子（三項演算子）を用いること）**
+```java
+import java.util.Scanner;
+int x=10;
+int y=3;
+System.out.printf("%d",--記述--);
+```

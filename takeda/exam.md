@@ -69,5 +69,54 @@
 6. int型の変数numを２０として初期化せよ
 7. 定数としてdouble型の変数（値は3.14）を宣言せよ
 8. 1,'1',"1"はそれぞれ何型の変数か述べよ
-9. 
-10. 
+9. 以下のソースを実行した時、画面にどのように表示されるか
+```
+		int a=10;
+		int b=10;
+		System.out.println(++a + 50);
+		System.out.println(b++ + 50);
+```
+10. 以下のソースを実行した時、画面にはどのように表示されるか
+```
+		int x=59;
+		int y=63;
+		String ans= "x+yは" + x + y;
+		System.out.println(ans);
+```
+11. `(water <= 20 && food>=80)`
+	とはどういうことか、日本語で述べよ
+
+12. 以下のソースをswitch文に直せ
+```
+int fortune= new java.util.Random().nextInt(4)+1;
+if (fortune==1){
+	System.out.pruntln("大吉");
+}else if(fortune==2){
+	System.out.println("中吉");
+}else if(fortune==3){
+	System.out.println("吉");
+}else{
+	System.out.ptintln'("凶");
+}
+```
+13. 以下のソースコードを実行した時、countはいくつになる？
+```
+int count=0;
+for(int i=0;i<8;i++){
+	for(int j=0;j<３6;j+=3){
+		count++;
+	}
+}
+```
+14.以下のソースコードを実行した時、countはいくつになる？
+```
+int count=0;
+for(int i=0;i<8;i++){
+	for(int j=0;j<36;j+=3){
+		if(j%9==0){
+			continue;
+		}
+		count++;
+	}
+}
+```

@@ -32,7 +32,7 @@
 	1. 3 shift+A
 	1. 3 shift+X
 4. 15行目の文頭に移動したいとき使うコマンドは次のうちどれか
-	1. 15gg
+	1. 15G
 	1. 15g
 	1. 15ll
 5. 保存せずに終了するとき使うコマンドは次のうちどれか
@@ -123,28 +123,160 @@
 	1. 12%7
 	1. 1+4&lowast;3
 	1. 18/3-1
-4. 次のうち、文法として正しいのはどれか
+4. xに12、yに18を代入し"x+y=30"と出力したく以下のプログラムを書いたが、思う通りな結果を得ることはできなかった。どこを直せばよいか述べよ（例：〇〇行目の×××を△△△に直す）
+```java:Q4.java
+public class Main{
+	public static void main(String[] args){
+		int x=12;
+		int y=18;
+		System.out.println("x+y="+x+y);
+	}
+}
+```
+5. 次のうち、文法として正しいのはどれか
 	1. int x=3+5.0;
 	1. String s=2+"人目";
 	1. int number="5";
 	1. double d=true;
-5. 次のプログラムコードをコンパイルした時、エラーになった。どこを直せばよいか述べよ（例：〇〇行目の×××を△△△に直す）
-```java:Fortune.java
-public class Fortune{
+6. 次のプログラムコードをコンパイルした時、エラーになった。どこを直せばよいか述べよ（例：〇〇行目の×××を△△△に直す）
+```java:Q6.java
+public class Dice{
 	public static void main(String[] args){
-		boolean tenki = true;
-		if (tenki=true){
-			System.out.println("洗濯にいきます");
-			System.out.println("散歩にいきます");
+		int scoreA=new java.util.Random().nextInt(6)+1;
+		int scoreB=new java.util.Random().nextInt(6)+1;
+		if (scoreA=scoreB){
+			System.out.println("あいこ");
+		}else if(scoreA>scoreB){
+			System.out.println("Aの勝ち");
 		}else{
-			System.out.println("DVDを見ます");
+			System.out.println("Bの勝ち");
 		}
 	}
 }
 ```
-6. 次のうち、条件式として正しいのはどれか。
+7. 次のうち、条件式として正しいのはどれか。
 	1. 3
-	1. isNumeric=true
+	1. "false"
 	1. true
 	1. cost=300/15
-
+8. 以下の文を読み、括弧の中に入る数字を答えよ
+`int[] nums={10,20,30,40} という配分の要素数は( )であり、10は( )番目の要素に入っている`
+9. 以下のようなプログラムが組まれているとき、どのような結果が出力されるか。次のうち正しい組み合わせを答えよ
+```java:Q9.java
+public class Main{
+	public static void main(String[] args){
+		int[][] scores={{40,50,60},{80,60,70}};
+		System.out.println(scores.length);
+		System.out.println(scores[0].length):
+	}
+}
+```
+	1. 1行目:2 2行目:3
+	1. 1行目:2 2行目:[40,50,60]
+	1. 1行目:[[40,50,60],[80,60,70]] 2行目:[40,50,60]
+	1. 1行目:[[40,50,60],[80,60,70]] 2行目:3
+10. 次のプログラムを実行したときどのような結果が出力されるか述べよ
+```java:Q10.java
+public class Main{
+	publis static void main(String[] args){
+		int x=5;
+		int y=3;
+		for (int i=0;i<8;i++){
+			x+=y;
+		}
+		System.out.println(x);
+	}
+}
+```
+11. 次のプログラムを実行したときどのような結果が出力されるか述べよ
+```java:Q11.java
+public class Main{
+	public static void main(String[] args){
+		for (int i=0;i<5;i++){
+			for (int j=0;j<5;j++){
+				if (i+j+1<5){
+					System.out.print();
+				}else{
+					System.out.print("A");
+				}
+			}
+			System.out.println();
+		}
+	}
+}
+```
+12. 次のプログラムを実行したときどのような結果が出力されるか述べよ
+```java:Q12.java
+public class Main{
+	public static void main(String[] args){
+		int[] nums={56,39,3,98,47};
+		for (int i=0;i<nums.length;i++){
+			for (int j=i+1;j<nums.length;j++){
+				if(nums[i]<nums[j]){
+					int temp=nums[i];
+					nums[i]=nums[j];
+					nums[j]=temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(nums));
+	}
+}
+```
+13. 次のプログラムを実行したとき"data&#91;3&#93;&#91;8&#93;"にはどのような数が入っているか答えよ
+```java:Q13.java
+public class Main{
+	public static void main(String[] args){
+		int[][] data=new int[9][9];
+		for (int i=0;i<data.length;i++){
+			for (int j=0;j<data[i].length;j++){
+				data[i][j]=(i+1)+(j+1);
+			}
+		}
+	}
+}
+```
+13. 次のようなプログラムを組み、九九の表を出力したが列がズレてしまい失敗例のように出力された。成功例のようにきれいに揃えるにはどこを直せばよいか答えよ（例：〇〇行目の×××を△△△に直す）
+```java:Q13.java
+import java.util.*;
+public class Main{
+	public static void main(String[] args){
+		int[][] nums=new int[9][9];
+		for(int i=0;i<nums.length;i++){
+			for(int j=0;j<nums[i].length;j++){
+				nums[i][j]=(i+1)*(j+1);
+			}
+		}
+		for(int i=0;i<nums.length;i++){
+			for(int j=0;j<nums[i].length;j++){
+					System.out.printf("%d",nums[i][j]);
+			}
+			System.out.println();
+		}
+	}
+}
+```
+```
+失敗例
+123456789
+24681012141618
+369121518212427
+4812162024283236
+51015202530354045
+61218243036424854
+71421283542495663
+81624324048566472
+91827364554637281
+```
+```
+成功例
+  1  2  3  4  5  6  7  8  9
+  2  4  6  8 10 12 14 16 18
+  3  6  9 12 15 18 21 24 27
+  4  8 12 16 20 24 28 32 36
+  5 10 15 20 25 30 35 40 45
+  6 12 18 24 30 36 42 48 54
+  7 14 21 28 35 42 49 56 63
+  8 16 24 32 40 48 56 64 72
+  9 18 27 36 45 54 63 72 81
+```
