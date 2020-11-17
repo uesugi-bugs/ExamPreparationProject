@@ -161,7 +161,7 @@
 1. borderの外側にpaddingがある。  
 
 領域の角を丸めるプロパティは次のどれか？  
-1. - border-round  
+1. border-round    
 1. border-circle  
 1. border-rounded  
 1. border-radius  
