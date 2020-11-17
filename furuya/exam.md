@@ -159,7 +159,7 @@ public class Ball{
 	public static voice main(String[] args){  
 		int[] balls={1,2,3,4,5};  
 		int[] isPicked={false,false,false,false,false};  
-		for( i=0;i<5;i++){  
+		for( i=0;i<5:i++){  
 			while(true){  
 				it index=new Pandom().nextInt(balls.length);  
 				if(isPicked[index]){  
@@ -168,7 +168,7 @@ public class Ball{
 				System.out.prin(balls[index]);  
 				isPicked[index]=true  
 				breeak;  
-			      					   }  
+			  }  
 		}  
 	
 }
