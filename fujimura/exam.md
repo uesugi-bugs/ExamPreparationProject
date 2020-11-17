@@ -42,24 +42,25 @@
 
 
 ## Html & css(20) 過去2回の課題 + Joytas.netの記事
-### html
+### html  
+
 - 見出しに関するマークアップに関して、正しいのはどれか？  
-1.h1からh4まで使える。 
-1.h1からh5まで使える。 
-1.h1からh6まで使える。 
-1.h1からh7まで使える。 
+1. h1からh4まで使える。 
+1. h1からh5まで使える。 
+1. h1からh6まで使える。 
+1. h1からh7まで使える。 
 
--文書宣言のタグとして正しいのはどれか？
-1.<DOCTYPE html>
-2.<DTYPE html>
-3.<!DTYPE html>
-4.<!DOCTYPE html>
+- 文書宣言のタグとして正しいのはどれか？  
+1. <DOCTYPE html>  
+1. <DTYPE html>  
+1. <!DTYPE html>  
+1. <!DOCTYPE html>  
 
--文字コードを設定するタグはどれか？
-1.<meta charset="UTF-8">
-2.<mete charset="utf-8">
-3.<meta charaset="utf-8">
-4.<meta charaset="UTF-8">
+-文字コードを設定するタグはどれか？  
+1. <meta charset="UTF-8">  
+2. <mete charset="utf-8">  
+3. <meta charaset="utf-8">  
+4. <meta charaset="UTF-8">  
 
 -タイトルタグとして正しいものはどれか？
 1.<title>Dotinstall<title>
