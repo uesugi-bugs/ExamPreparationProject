@@ -1,11 +1,12 @@
 # テスト問題
-### Unix問題
+## Unix問題
+#### (配点：10点 １問:2点)
 ### 問題01
 今いる場所の隠しファイルを表示するコマンドはどれか？
 1. ls 
-1. ls-li
-1. ls-la
-1. ls-lt
+1. ls -li
+1. ls -la
+1. ls -lt
 ### 問題02
 一つ前にいた場所に戻るコマンドはどれか？
 1. cd ..
@@ -28,9 +29,10 @@
 今いる場所にあるfile1.txtの中身を確認するコマンドはどれか？
 1. echo file.txt
 1. cat file.txt
-1. cat "file.txt"
+1. cat -file.txt
 1. echo "file.txt"
-### vimtutor問題
+## vimtutor問題
+#### (配点：10点 １問:2点)
 ### 問題06
 カーソルを一つ左に移動するコマンドはどれか？
 1. j
@@ -61,7 +63,8 @@
 1. 10yy
 1. 10G
 1. 10D
-### git問題
+## git問題
+#### (配点：10点 １問:2点)
 ### 問題11
 gitの管理下に置くコマンドはどれか？
 1. git push
@@ -69,7 +72,7 @@ gitの管理下に置くコマンドはどれか？
 1. git clone
 1. git init
 ### 問題12
-最初のコミットと現在の作業フォルダの差分を表示するコマンドはどれか？
+最新のコミットと現在の作業フォルダの差分を表示するコマンドはどれか？
 1. git status
 1. git diff
 1. git log
@@ -81,7 +84,7 @@ test.txtをステージングエリアにあげるコマンドはどれか？
 1. git add test.txt
 1. git add
 ### 問題14
-devというブランチの修正をmasterブランチに取り込むコマンドはどれか？
+masterブランチにいるときdevというブランチの修正をmasterブランチに取り込むコマンドはどれか？
 1. git checkout master
 1. git branch dev
 1. git merge dev
@@ -92,7 +95,8 @@ devというブランチの修正をmasterブランチに取り込むコマン�
 1. git pull origin master
 1. git push
 1. git push -u origin master
-### html問題
+## html問題
+#### (配点：8点 １問:2点)
 ### 問題16
 連番リストを作るタグの組み合わせとして正しいのはどれか？
 1. li, ul
@@ -117,7 +121,8 @@ devというブランチの修正をmasterブランチに取り込むコマン�
 1. side 
 1. aside
 1. dsub
-### css問題
+## css問題
+#### (配点：12点 １問:2点)
 ### 問題20
 要素の下に線を引くことができるプロパティはどれか？
 1. border-line
@@ -154,7 +159,8 @@ box-shadow:1px 2px 3px 4px #888;の4pxの値はどの値か？
 1. 右の向き
 1. 広がり
 1. ぼかし
-### java問題
+## java問題
+#### (配点：50点 １問:2点 (問題46・47は3点、問題48は4点))
 ### 問題26
 -128から127の整数を格納するのに適した型はどれか？
 1. short
@@ -209,6 +215,7 @@ int j = 8 + 2;
 1. int num = Math.max(5, 10);
 1. int num = math.max(5, 10);
 1. int num = 5&lt;
+### 問題35
 乱数をint rumに代入する命令文はどれか？
 1. int rum = new java.util.Scanner(System.in).nextInt();
 1. int rum = new java.util.Arrays.toString();
@@ -227,7 +234,7 @@ int j = 8 + 2;
 1. 2<x , x<5
 1. x==2<5
 ### 問題38
-次の式のうち、条件式として適切なものはどれか？
+次の式のうち、条件式として間違っているものはどれか？
 1. age !=30
 1. true
 1. b+5&lt;20
@@ -239,7 +246,7 @@ switch文の条件式として正しいものはどれか？
 1. switch(fortune = 1)
 1. switch(fortune &lt;= 1)
 ### 問題40
-swich文で処理を中断してswich文を抜けさせるときの指示は？
+switch文で処理を中断してswich文を抜けさせるときの指示は？
 1. else;
 1. stop;
 1. break;
@@ -275,29 +282,53 @@ scores配列の3番目の要素を表示する方法として正しいものは�
 1. System.out.print(scores{3});
 1. System.out.print(scores{2});
 ### 問題46
+次のコードで間違っている個所を修正せよ。
 
-1.
-1.
-1.
-1.
+```Test1.java
+public class Test1{
+  public static void main(String[] args){
+    int[] nums={2,3,4,5};
+    for(int i=0;i<5;i++){
+      nums[i]=new java.util.Random().nextInt(5);
+    }
+    System.out.println(nums[2]);
+  }
+}
+
+```
 ### 問題47
-1.
-1.
-1.
-1.
+次のコードで間違っている個所を修正せよ。
+
+```Test2.java
+public class Test2{
+  public static void main(String[] args){
+    int[] scores ={1,2,3,4};
+    int sum = scores[1]+scores[2]+scores[3]+scores[4];
+    System.out.printf("合計は%d点",sum);
+  }
+}
+
+```
 ### 問題48
-1.
-1.
-1.
-1.
-### 問題49
-1.
-1.
-1.
-1.
-### 問題50
-1.
-1.
-1.
-1.
+次のソースコードを実行したときに実行例のようにするにはどうしたらいいか。
+
+```Test3.java
+public class Test3{
+  public static void main(String[] args){
+    int fortune = new java.util.Random().nextInt(3)+1;
+    switch(fortune){
+    case 1:
+      System.out.println("大吉");
+    case 2:
+      System.out.println("吉");
+    case 3:
+      System.out.println("凶");
+     }
+  }
+}
+```
+[実行例]
+小吉
+
+[実行例]
 
