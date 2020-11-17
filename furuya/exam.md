@@ -168,7 +168,7 @@ public class Ball{
 				System.out.prin(balls[index]);  
 				isPicked[index]=true  
 				breeak;  
-			         }  
+			      					   }  
 		}  
 	
 }
