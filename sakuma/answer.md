@@ -21,16 +21,16 @@
 1. /
 
 # Git
-1. init
-1. add
-1. commit
-1. reset
-1. branch
-1. checkout
-1. merge
-1. clone
-1. push
-1. pull
+1. git init
+1. git add
+1. git commit
+1. git reset
+1. git branch
+1. git checkout
+1. git merge
+1. git clone
+1. git push
+1. git pull
 
 # Html&css
 1. &lt;!DOCTYPE html&gt;
@@ -44,7 +44,7 @@
 1. display: inline-block;とすると要素が左に詰められながら配置されていく。
 1. :hover
 1. background: url(../img/bg.png)
-1. img + img { mergin-left: 10px; }
+1. img + img { margin-left: 10px; }
 1. background
 1. #f00,#ff0000,rgb(255,0,0)など
 1. &amp;copy;
