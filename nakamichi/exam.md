@@ -173,7 +173,7 @@ ___
 **問3(2)下記のソースコードで配列の要素を出力させるために１行目にパッケージをインポートせよ**
 ```java
 1行目------------------
-int[] arr=new int{1,2,3}
+int[] arr=new int{1,2,3};
 System.out.println(Arrays.toString(arr));
 ```
 - 解答欄
@@ -182,7 +182,7 @@ ___
 **問4(2)下記のソースコードを実行した際の出力結果を記載せよ**
 ```java
 import java.util.*;
-int[] arr=new int[4]
+int[] arr=new int[4];
 System.out.println(Arrays.toString(arr));
 ```
 - 解答欄
@@ -191,14 +191,14 @@ ___
 **問5(2)下記のソースコードを実行した際の出力結果を記載せよ**
 ```java
 import java.util.*;
-int[][] arr=new int[3][3]
+int[][] arr=new int[3][3];
 for(int i=0;i<2;i++){
   for(int j=0;j<arr[i].length;j++){
     arr[i][j]=j+100;
    }
 }
 for(int i=0;i<arr.length;i++){
- for(int J=0;j<arr[i].length;j++{
+ for(int j=0;j<arr[i].length;j++{
     System.out.printf("%2d"arr[i][j]);
   }
   System.out.println();
@@ -208,7 +208,7 @@ for(int i=0;i<arr.length;i++){
 
 
 ___
-**問6(10)下記の--挿入--部分に必ず一回実行されarrData[i]に1が代入される文を追記せよ**
+**問6(10)下記の--挿入--部分に必ず一回実行されwhileの条件式を満たさないときにarrData[i]に100が代入される文を追記せよ**
 ```java
 import java.util.*;
 int[] arr1=new int [10];
